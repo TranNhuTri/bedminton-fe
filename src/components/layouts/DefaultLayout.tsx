@@ -1,6 +1,15 @@
-import { Outlet } from 'react-router';
+import { Outlet } from 'react-router'
+
+import HeaderPage from '@components/common/HeaderPage'
 
 function DefaultLayout() {
-  return <Outlet />;
+  return (
+    <>
+      <HeaderPage />
+      <div className='bg-primary-25 h-full w-full'>
+        <Outlet />
+      </div>
+    </>
+  )
 }
-export default DefaultLayout;
+export default DefaultLayout

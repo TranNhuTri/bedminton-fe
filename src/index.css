@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary-25: #FEF9F4;
+  --color-primary-500: #E28424;
+  --color-gray-500: #595959;
+  --shadow-header: 0 -32px #fff;
+}
+
+@layer base {
+  html {
+    color: var(--color-gray-500);
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+  }
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('/fonts/NunitoSans_10pt-Regular.ttf') format('truetype');
+}

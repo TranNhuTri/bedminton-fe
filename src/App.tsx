@@ -1,9 +1,9 @@
-import './App.css';
+import './App.css'
 
-import RoutesElement from '@routes/RoutesElement';
+import RoutesElement from '@routes/RoutesElement'
 
 function App() {
-  return <RoutesElement />;
+  return <RoutesElement />
 }
 
-export default App;
+export default App

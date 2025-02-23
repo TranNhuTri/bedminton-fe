@@ -28,6 +28,7 @@
       "@types/*": ["./src/types/*"],
       "@routes/*": ["./src/routes/*"],
       "@interfaces/*": ["./src/interfaces/*"],
+      "@utils/*": ["./src/utils/*"],
       "@hooks/*": ["./src/shared/hooks/*"],
       "@/*": ["./src/*"]
     }
