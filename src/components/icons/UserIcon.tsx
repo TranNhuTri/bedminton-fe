@@ -1,3 +1,5 @@
+import Icon from '@icons/user.svg'
+
 export default function UserIcon({ ...rest }) {
-  return <img {...rest} src='src/assets/icons/user.svg' alt='user' />
+  return <Icon {...rest} />
 }

@@ -23,6 +23,7 @@
     "noUncheckedSideEffectImports": true,
     "baseUrl": "./",
     "paths": {
+      "@icons/*": ["./src/assets/icons/*"],
       "@components/*": ["./src/components/*"],
       "@pages/*": ["./src/pages/*"],
       "@types/*": ["./src/types/*"],

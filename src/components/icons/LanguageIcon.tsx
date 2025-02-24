@@ -1,3 +1,5 @@
+import Icon from '@icons/language.svg'
+
 export default function LanguageIcon({ ...rest }) {
-  return <img {...rest} src='src/assets/icons/language.svg' alt='language' />
+  return <Icon {...rest} />
 }

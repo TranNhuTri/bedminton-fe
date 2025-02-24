@@ -1,3 +1,5 @@
+import Icon from '@icons/badminton-man.svg'
+
 export default function BadmintonMan({ ...rest }) {
-  return <img {...rest} src='src/assets/icons/badminton-man.svg' alt='badminton-man' />
+  return <Icon {...rest} />
 }

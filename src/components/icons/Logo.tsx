@@ -1,3 +1,5 @@
+import Icon from '@icons/logo.svg'
+
 export default function Logo({ ...rest }) {
-  return <img {...rest} src='src/assets/icons/logo.svg' alt='logo' />
+  return <Icon {...rest} />
 }

@@ -11,7 +11,7 @@ function Home() {
         </span>
         <AppButton label='Search now' className='bg-primary-500 text-white' icon={() => <SearchIcon />} />
       </div>
-      <BadmintonMan className='' />
+      <BadmintonMan />
     </div>
   )
 }

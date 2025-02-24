@@ -1,3 +1,5 @@
+import Icon from '@icons/search.svg'
+
 export default function SearchIcon({ ...rest }) {
-  return <img {...rest} src='src/assets/icons/search.svg' alt='search' />
+  return <Icon {...rest} />
 }

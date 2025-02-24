@@ -1,5 +1,5 @@
-import { ReactSVG } from 'react-svg'
+import Icon from '@icons/location.svg'
 
 export default function LocationIcon({ ...rest }) {
-  return <ReactSVG {...rest} src='src/assets/icons/location.svg' />
+  return <Icon {...rest} />
 }
