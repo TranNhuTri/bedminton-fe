@@ -1,3 +1,5 @@
+import { ReactSVG } from 'react-svg'
+
 export default function LocationIcon({ ...rest }) {
-  return <img {...rest} src='src/assets/icons/location.svg' alt='location' />
+  return <ReactSVG {...rest} src='src/assets/icons/location.svg' />
 }

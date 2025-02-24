@@ -1,8 +1,8 @@
-import path from 'node:path';
+import path from 'node:path'
 
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react-swc';
-import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
@@ -18,4 +18,4 @@ export default defineConfig({
       '@components': path.resolve(__dirname, './src/components'),
     },
   },
-});
+})
