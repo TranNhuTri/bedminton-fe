@@ -1,10 +1,18 @@
+import 'primeicons/primeicons.css';
+import "primereact/resources/themes/lara-light-cyan/theme.css";
+        
 import Image from "next/image";
+import { PrimeReactProvider } from 'primereact/api';
+import { Button } from 'primereact/button';
+
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
+    <PrimeReactProvider>
     <div className={styles.page}>
       <main className={styles.main}>
+        <Button label="Check" icon="pi pi-check" />
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -91,5 +99,6 @@ export default function Home() {
         </a>
       </footer>
     </div>
+    </PrimeReactProvider>
   );
 }
