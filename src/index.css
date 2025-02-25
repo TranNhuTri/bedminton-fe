@@ -1,10 +1,10 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
-  --color-primary-50: #FEF9F4;
+  --color-primary-25: #FEF9F4;
   --color-primary-500: #E28424;
   --color-gray-500: #595959;
-  --shadow-header-pseudo: 0 -32px #fff;
+  --shadow-header: 0 -32px #fff;
 }
 
 @layer base {
