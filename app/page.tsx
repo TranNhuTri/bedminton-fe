@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Button from '@mui/material/Button';
+
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -13,6 +15,7 @@ export default function Home() {
           height={38}
           priority
         />
+        <Button variant="contained">Hello world</Button>
         <ol>
           <li>
             Get started by editing <code>app/page.tsx</code>.
