@@ -17,10 +17,12 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@eslint/eslintrc": "^3",
     "@mui/material": "^6.4.5",
+    "@mui/material-nextjs": "^6.4.3",
     "@tailwindcss/postcss": "^4.0.8",
     "@types/node": "^20",
     "@types/react": "^19",
