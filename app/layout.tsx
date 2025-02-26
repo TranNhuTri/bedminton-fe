@@ -3,9 +3,9 @@ import { Nunito_Sans } from 'next/font/google';
 
 import './globals.css';
 
-import MainHeader from '@/components/main-header/MainHeader';
+import LayoutHeader from '@/components/Layout/Header';
 
-const nunito = Nunito_Sans({
+const nunitoSans = Nunito_Sans({
   subsets: ['latin', 'vietnamese'],
 });
 
@@ -20,9 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' className={nunito.className}>
-      <body>
-        <MainHeader />
+    <html lang='en'>
+      <body className={nunitoSans.className}>
+        <LayoutHeader />
         {children}
       </body>
     </html>
