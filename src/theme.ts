@@ -5,9 +5,12 @@ const theme = createTheme({
   components: {
     MuiButton: {
       styleOverrides: {
-        iconSizeMedium: '16px'
-      }
-    }
+        iconSizeMedium: '16px',
+        root: {
+          textTransform: 'none',
+        },
+      },
+    },
   },
   cssVariables: true,
   palette: {
@@ -25,7 +28,7 @@ const theme = createTheme({
       A100: '#E28424',
       A200: '#E28424',
       A400: '#E28424',
-      A700: '#E28424'
+      A700: '#E28424',
     },
     secondary: {
       50: '#F5F5F5',
@@ -41,12 +44,12 @@ const theme = createTheme({
       A100: '#595959',
       A200: '#595959',
       A400: '#595959',
-      A700: '#595959'
-    }
+      A700: '#595959',
+    },
   },
   typography: {
-    fontFamily: 'var(--font-nunito-sans)'
-  }
+    fontFamily: 'var(--font-nunito-sans)',
+  },
 });
 
 export default theme;
