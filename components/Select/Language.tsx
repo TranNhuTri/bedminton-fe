@@ -11,17 +11,16 @@ import { setUserLocale } from '@/services/locale';
 export default function SelectLanguage() {
   const t = useTranslations('Layout');
   const defaultLocale = useLocale() as Language;
-  const [locale] = React.useState(defaultLocale);
+  const [locale, setLocale] = React.useState(defaultLocale);
 
   const onChangeLocale = (event: SelectChangeEvent) => {
-    setUserLocale(event.target.value as Language);
-  }
+    const value = event.target.value as Language;
+    setUserLocale(value);
+    setLocale(value);
+  };
 
   return (
-    <Select
-      value={locale}
-      onChange={onChangeLocale}
-    >
+    <Select value={locale} onChange={onChangeLocale}>
       {LANGUAGES.map((language) => (
         <MenuItem key={language} value={language}>
           {t(`language.${language}`)}

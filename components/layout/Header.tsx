@@ -8,22 +8,22 @@ export default function LayoutHeader() {
   const t = useTranslations('Layout');
 
   return (
-    <header className='h-16 w-full fixed bg-primary-25'>
-      <div className='h-full max-w-10/12 flex items-center justify-between pt-4 pb-2 mx-auto'>
+    <header className='bg-primary-25 fixed h-16 w-full'>
+      <div className='mx-auto flex h-full max-w-10/12 items-center justify-between pt-4 pb-2'>
         <IconBrand className='h-10' />
         <div className='flex items-center gap-4'>
           <div className='flex items-center gap-1'>
-            <IconLocation className='h-4 w-4 text-primary-500' />
-            <span>
-              {t('header.location')}
-            </span>
+            <IconLocation className='text-primary-500 h-4 w-4' />
+            <span>{t('header.location')}</span>
           </div>
           <SelectLanguage />
-          <Button variant='outlined' color='secondary' className='flex items-center gap-1'>
+          <Button
+            variant='outlined'
+            color='secondary'
+            className='flex items-center gap-1'
+          >
             <IconUser className='h-4 w-4 text-gray-500' />
-            <span>
-              {t('header.login')}
-            </span>
+            <span>{t('header.login')}</span>
           </Button>
         </div>
       </div>
