@@ -3,6 +3,7 @@ import { Button } from '@mui/material';
 
 import { IconBrand, IconLocation, IconUser } from '@/components/Icon';
 import { SelectLanguage } from '@/components/Select';
+import { CommonButton } from '@/components/Common';
 
 export default function LayoutHeader() {
   const t = useTranslations('Layout');
@@ -17,14 +18,15 @@ export default function LayoutHeader() {
             <span>{t('header.location')}</span>
           </div>
           <SelectLanguage />
-          <Button
-            variant='outlined'
+          <CommonButton
+            variant='contained'
             color='secondary'
             className='flex items-center gap-1'
           >
-            <IconUser className='h-4 w-4 text-gray-500' />
+            <IconUser className='h-4 w-4 text-white' />
             <span>{t('header.login')}</span>
-          </Button>
+          </CommonButton>
+          <Button></Button>
         </div>
       </div>
     </header>
