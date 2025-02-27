@@ -1,0 +1,15 @@
+{
+  "Layout": {
+    "language": {
+      "en": "English",
+      "vi": "Tiếng Việt"
+    },
+    "header": {
+      "location": "Danang",
+      "login": "Login"
+    }
+  },
+  "HomePage": {
+    "title": "Hello world!"
+  }
+}

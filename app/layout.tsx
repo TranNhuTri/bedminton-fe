@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { Nunito_Sans } from 'next/font/google';
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages } from 'next-intl/server';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 
@@ -19,20 +21,25 @@ export const metadata: Metadata = {
   description: 'We will update it later. Just keep going... lol',
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang='en'>
+    <html lang={locale}>
       <body className={nunitoSans.variable}>
-        <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>
-            <LayoutHeader />
-            {children}
-          </ThemeProvider>
-        </AppRouterCacheProvider>
+        <NextIntlClientProvider messages={messages}>
+          <AppRouterCacheProvider>
+            <ThemeProvider theme={theme}>
+              <LayoutHeader />
+              {children}
+            </ThemeProvider>
+          </AppRouterCacheProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

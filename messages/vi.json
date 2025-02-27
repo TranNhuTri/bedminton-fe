@@ -1,0 +1,15 @@
+{
+  "Layout": {
+    "language": {
+      "en": "English",
+      "vi": "Tiếng Việt"
+    },
+    "header": {
+      "location": "Đà Nẵng",
+      "login": "Đăng nhập"
+    }
+  },
+  "HomePage": {
+    "title": "Xin chào thế giới!"
+  }
+}
