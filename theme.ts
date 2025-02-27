@@ -5,7 +5,6 @@ const theme = createTheme({
   components: {
     MuiButton: {
       styleOverrides: {
-        iconSizeMedium: '16px',
         root: {
           textTransform: 'none',
         },

@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import { Nunito_Sans } from 'next/font/google';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from '@/src/theme';
 
-import './globals.css';
+import theme from '@/theme';
+import '@/app/globals.css';
 
-import LayoutHeader from '@/components/Layout/Header';
+import { LayoutHeader } from '@/components/Layout';
 
 const nunitoSans = Nunito_Sans({
   weight: ['300', '600'],

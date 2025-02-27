@@ -6,9 +6,7 @@ export default function Home() {
           Searching for a <span className="text-primary-500">casual</span>{" "}
           badminton court
         </span>
-        {/* <AppButton label='Search now' className='bg-primary-500 text-white' icon={() => <SearchIcon />} /> */}
       </div>
-      {/* <BadmintonMan /> */}
     </div>
   );
 }
