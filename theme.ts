@@ -6,7 +6,63 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
+          borderRadius: 12,
           textTransform: 'none',
+        },
+        sizeMedium: {
+          fontSize: 16,
+          minHeight: 40,
+          padding: '4px 12px',
+        },
+        containedPrimary: {
+          backgroundColor: 'var(--color-primary-500)',
+          color: 'var(--color-white)',
+        },
+        containedSecondary: {
+          backgroundColor: 'var(--color-gray-500)',
+          color: 'var(--color-white)',
+        },
+        outlinedPrimary: {
+          backgroundColor: 'var(--color-primary-50)',
+          color: 'var(--color-primary-500)',
+          outline: 'none',
+          border: 'none',
+        },
+        outlinedSecondary: {
+          backgroundColor: 'var(--color-gray-50)',
+          color: 'var(--color-gray-500)',
+          outline: 'none',
+          border: 'none',
+        },
+        textPrimary: {
+          backgroundColor: 'var(--color-white)',
+          color: 'var(--color-primary-500)',
+        },
+        textSecondary: {
+          backgroundColor: 'var(--color-white)',
+          color: 'var(--color-gray-500)',
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          backgroundColor: 'var(--color-white)',
+          borderRadius: 12,
+          color: 'var(--color-gray-500)',
+          height: 40,
+          '& .MuiOutlinedInput-notchedOutline': {
+            borderColor: 'var(--color-gray-200)',
+          },
+          '&:hover .MuiOutlinedInput-notchedOutline': {
+            borderColor: 'var(--color-primary-500)',
+          },
+          '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+            borderColor: 'var(--color-primary-500)',
+          },
+        },
+        input: {
+          padding: '4px 12px',
         },
       },
     },

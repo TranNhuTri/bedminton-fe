@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
+import type { SelectChangeEvent } from '@mui/material/Select';
 
 import { CommonSelect } from '@/components/Common';
 import { Locale } from '@/configs';
@@ -14,16 +15,13 @@ export default function SelectLocale() {
   const [locale, setLocale] = useState(defaultLocale);
   const localeOptions = enumToOptions(Locale, (key) => t(`locale.${key}`));
 
-  const onChange = (value: Locale) => {
+  const onChange = (event: SelectChangeEvent) => {
+    const value = event.target.value as Locale;
     setUserLocale(value);
     setLocale(value);
   };
 
   return (
-    <CommonSelect
-      initialValue={locale}
-      options={localeOptions}
-      onChange={onChange}
-    />
+    <CommonSelect value={locale} options={localeOptions} onChange={onChange} />
   );
 }

@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl';
+import { Button } from '@mui/material';
 
 import { IconBrand, IconLocation, IconUser } from '@/components/Icon';
 import { SelectLocale } from '@/components/Select';
-import { CommonButton } from '@/components/Common';
 
 export default function LayoutHeader() {
   const t = useTranslations('Layout');
@@ -17,14 +17,14 @@ export default function LayoutHeader() {
             <span>{t('header.location')}</span>
           </div>
           <SelectLocale />
-          <CommonButton
-            variant='contained'
+          <Button
+            variant='text'
             color='secondary'
             className='flex items-center gap-1'
           >
-            <IconUser className='h-4 w-4 text-white' />
+            <IconUser className='h-4 w-4' />
             <span>{t('header.login')}</span>
-          </CommonButton>
+          </Button>
         </div>
       </div>
     </header>
