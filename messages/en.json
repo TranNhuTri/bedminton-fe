@@ -1,12 +1,17 @@
 {
   "Layout": {
-    "language": {
-      "en": "English",
-      "vi": "Tiếng Việt"
+    "locale": {
+      "EN": "English",
+      "VI": "Tiếng Việt"
     },
     "header": {
       "location": "Danang",
       "login": "Login"
+    }
+  },
+  "Common": {
+    "select": {
+      "empty": "No data"
     }
   },
   "HomePage": {

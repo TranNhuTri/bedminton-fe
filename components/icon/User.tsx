@@ -1,4 +1,4 @@
-export default function Location({ ...rest }) {
+export default function IconUser({ ...rest }) {
   return (
     <svg {...rest} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M12 2C9.37996 2 7.24996 4.13 7.24996 6.75C7.24996 9.32 9.25996 11.4 11.88 11.49C11.96 11.48 12.04 11.48 12.1 11.49C12.12 11.49 12.13 11.49 12.15 11.49C12.16 11.49 12.16 11.49 12.17 11.49C14.73 11.4 16.74 9.32 16.75 6.75C16.75 4.13 14.62 2 12 2Z" fill="currentColor" />

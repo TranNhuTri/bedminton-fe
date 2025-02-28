@@ -1,12 +1,17 @@
 {
   "Layout": {
-    "language": {
-      "en": "English",
-      "vi": "Tiếng Việt"
+    "locale": {
+      "EN": "English",
+      "VI": "Tiếng Việt"
     },
     "header": {
       "location": "Đà Nẵng",
       "login": "Đăng nhập"
+    }
+  },
+  "Common": {
+    "select": {
+      "empty": "Không có dữ liệu"
     }
   },
   "HomePage": {

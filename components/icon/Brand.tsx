@@ -1,4 +1,4 @@
-export default function Brand({ ...rest }) {
+export default function IconBrand({ ...rest }) {
   return (
     <svg
       {...rest}

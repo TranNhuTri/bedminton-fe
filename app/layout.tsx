@@ -10,6 +10,10 @@ import '@/app/globals.css';
 
 import { LayoutHeader } from '@/components/Layout';
 
+type Props = Readonly<{
+  children: React.ReactNode;
+}>;
+
 const nunitoSans = Nunito_Sans({
   weight: ['300', '600'],
   subsets: ['latin', 'vietnamese'],
@@ -21,11 +25,7 @@ export const metadata: Metadata = {
   description: 'We will update it later. Just keep going... lol',
 };
 
-export default async function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default async function RootLayout({ children }: Props) {
   const locale = await getLocale();
   const messages = await getMessages();
 

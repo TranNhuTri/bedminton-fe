@@ -4,8 +4,7 @@ import { ReactNode } from 'react';
 import { Button, ButtonProps } from '@mui/material';
 
 interface Props extends ButtonProps {
-  readonly children?: ReactNode;
-  readonly loading?: boolean;
+  children?: ReactNode;
 }
 
 export default function CommonButton({ children, ...rest }: Props) {

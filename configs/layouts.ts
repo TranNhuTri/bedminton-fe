@@ -1,8 +1,8 @@
-export enum Language {
+export enum Locale {
   EN = 'en',
   VI = 'vi',
 }
 
-export const DEFAULT_LANGUAGE = Language.VI;
+export const DEFAULT_LOCALE = Locale.VI;
 
-export const LANGUAGES = [Language.EN, Language.VI] as const;
+export const LOCALES = [Locale.EN, Locale.VI] as const;
