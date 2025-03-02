@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import Link from 'next/link';
 import {
   Button,
@@ -9,12 +10,7 @@ import {
   OutlinedInput,
 } from '@mui/material';
 
-import {
-  IconBrand,
-  IconEmail,
-  IconFacebook,
-  IconGoogle,
-} from '@/components/Icon';
+import { IconEmail, IconFacebook, IconGoogle } from '@/components/Icon';
 import { InputPassword } from '@/components/Input';
 import { HREF } from '@/configs';
 
@@ -25,7 +21,13 @@ export default function Login() {
     <div className='flex flex-col'>
       <div className='mt-20 flex flex-col items-center gap-2'>
         <div className='text-5xl'>{t('title')}</div>
-        <IconBrand className='h-10' />
+        <Image
+          className='h-10 object-cover'
+          src='/assets/svgs/brand.svg'
+          alt='Badminton Hub'
+          width={234}
+          height={40}
+        />
       </div>
       <div className='mx-auto mt-10 w-full max-w-[480px]'>
         <div className='flex w-full flex-col gap-4 rounded-[32px] bg-white p-6'>
@@ -47,13 +49,13 @@ export default function Login() {
           <div className='text-right'>
             <Link
               href={HREF.FORGOT_PASSWORD}
-              className='text-primary-500 underline-offset-4 transition duration-300 hover:underline'
+              className='text-primary-500 text-sm underline-offset-4 transition duration-300 hover:underline'
             >
               {t('forgot-password')}
             </Link>
           </div>
           <Button variant='contained'>{t('login')}</Button>
-          <Divider className='border-gray-200 text-gray-400'>
+          <Divider className='border-gray-200 text-sm text-gray-400'>
             {t('or-login-with')}
           </Divider>
           <div className='flex gap-2'>
@@ -74,7 +76,7 @@ export default function Login() {
               <span>Facebook</span>
             </Button>
           </div>
-          <div className='flex justify-center gap-1.5'>
+          <div className='flex justify-center gap-1.5 text-sm'>
             <div className='text-gray-400'>{t('dont-have-an-account-yet')}</div>
             <Link
               href={HREF.REGISTER}

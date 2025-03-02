@@ -1,4 +1,3 @@
-export { default as IconBrand } from './Brand';
 export { default as IconChevronDown } from './ChevronDown';
 export { default as IconEmail } from './Email';
 export { default as IconEye } from './Eye';

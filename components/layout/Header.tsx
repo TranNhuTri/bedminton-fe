@@ -2,9 +2,10 @@
 
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import { Button } from '@mui/material';
 
-import { IconBrand, IconLocation, IconUser } from '@/components/Icon';
+import { IconLocation, IconUser } from '@/components/Icon';
 import { SelectLocale } from '@/components/Select';
 import { HREF } from '@/configs';
 
@@ -15,7 +16,13 @@ export default function LayoutHeader() {
   return (
     <header className='bg-primary-25 fixed top-0 h-16 w-full'>
       <div className='mx-auto flex h-full max-w-10/12 items-center justify-between pt-4 pb-2'>
-        <IconBrand className='h-10' />
+        <Image
+          className='h-10 object-cover'
+          src='/assets/svgs/brand.svg'
+          alt='Badminton Hub'
+          width={234}
+          height={40}
+        />
         <div className='flex items-center gap-4'>
           <div className='flex items-center gap-1'>
             <IconLocation className='text-primary-500 h-4 w-4' />
