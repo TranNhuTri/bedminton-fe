@@ -70,15 +70,15 @@ export default function Home() {
               endAdornment={
                 <InputAdornment position='end'>
                   <IconButton
-                    aria-label={
-                      showPassword
-                        ? 'hide the password'
-                        : 'display the password'
-                    }
-                    onClick={onToggleShowPassword}
                     edge='end'
+                    size='small'
+                    onClick={onToggleShowPassword}
                   >
-                    {showPassword ? <IconEyeSlash /> : <IconEye />}
+                    {showPassword ? (
+                      <IconEyeSlash className='h-4 w-4' />
+                    ) : (
+                      <IconEye className='h-4 w-4' />
+                    )}
                   </IconButton>
                 </InputAdornment>
               }

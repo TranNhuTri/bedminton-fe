@@ -70,6 +70,11 @@ const theme = createTheme({
           '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
             borderColor: 'var(--color-primary-500)',
           },
+          '& input:-webkit-autofill': {
+            WebkitBoxShadow: '0 0 0 100px transparent inset !important',
+            WebkitTextFillColor: 'inherit !important',
+            transition: 'background-color 5000s ease-in-out 0s',
+          },
         },
         input: {
           padding: '4px 12px',
