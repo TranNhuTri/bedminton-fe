@@ -15,6 +15,7 @@
     }
   },
   "Login": {
+    "back-to-home": "Back to home",
     "title": "Welcome back to",
     "email-address": "Email address",
     "password": "Password",

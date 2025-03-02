@@ -15,6 +15,7 @@
     }
   },
   "Login": {
+    "back-to-home": "Quay lại trang chủ",
     "title": "Chào mừng trở lại",
     "email-address": "Địa chỉ email",
     "password": "Mật khẩu",

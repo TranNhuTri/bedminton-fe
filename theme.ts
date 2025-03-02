@@ -11,6 +11,10 @@ const theme = createTheme({
           borderRadius: 12,
           textTransform: 'none',
           boxShadow: 'none',
+          '& svg': {
+            height: 16,
+            width: 16,
+          },
         },
         sizeMedium: {
           fontSize: 16,

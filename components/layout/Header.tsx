@@ -1,11 +1,16 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/navigation';
 import { Button } from '@mui/material';
 
 import { IconBrand, IconLocation, IconUser } from '@/components/Icon';
 import { SelectLocale } from '@/components/Select';
+import { HREF } from '@/configs';
 
 export default function LayoutHeader() {
   const t = useTranslations('Layout');
+  const router = useRouter();
 
   return (
     <header className='bg-primary-25 fixed h-16 w-full'>
@@ -21,8 +26,9 @@ export default function LayoutHeader() {
             variant='text'
             color='secondary'
             className='flex items-center gap-2'
+            onClick={() => router.push(HREF.LOGIN)}
           >
-            <IconUser className='h-4 w-4' />
+            <IconUser />
             <span>{t('header.login')}</span>
           </Button>
         </div>

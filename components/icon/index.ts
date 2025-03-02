@@ -5,6 +5,7 @@ export { default as IconEye } from './Eye';
 export { default as IconEyeSlash } from './EyeSlash';
 export { default as IconFacebook } from './Facebook';
 export { default as IconGoogle } from './Google';
+export { default as IconHome } from './Home';
 export { default as IconLocation } from './Location';
 export { default as IconLock } from './Lock';
 export { default as IconTranslate } from './Translate';

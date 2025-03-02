@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import {
   Button,
@@ -20,6 +21,7 @@ import {
   IconEyeSlash,
   IconFacebook,
   IconGoogle,
+  IconHome,
   IconLock,
 } from '@/components/Icon';
 import { SelectLocale } from '@/components/Select';
@@ -27,13 +29,23 @@ import { HREF } from '@/configs';
 
 export default function Home() {
   const t = useTranslations('Login');
+  const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
 
   const onToggleShowPassword = () => setShowPassword((show) => !show);
 
   return (
     <div className='flex flex-col'>
-      <div className='text-right'>
+      <div className='flex justify-between'>
+        <Button
+          variant='text'
+          color='secondary'
+          className='flex items-center gap-2'
+          onClick={() => router.push(HREF.HOME)}
+        >
+          <IconHome />
+          <span>{t('back-to-home')}</span>
+        </Button>
         <SelectLocale />
       </div>
       <div className='mt-20 flex flex-col items-center gap-2'>
@@ -98,7 +110,7 @@ export default function Home() {
               color='secondary'
               className='flex flex-1 items-center gap-2'
             >
-              <IconGoogle className='h-6 w-6' />
+              <IconGoogle />
               <span>Google</span>
             </Button>
             <Button
@@ -106,7 +118,7 @@ export default function Home() {
               color='secondary'
               className='flex flex-1 items-center gap-2'
             >
-              <IconFacebook className='h-6 w-6' />
+              <IconFacebook />
               <span>Facebook</span>
             </Button>
           </div>
