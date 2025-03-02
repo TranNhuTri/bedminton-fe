@@ -14,8 +14,8 @@ export default function LayoutHeader() {
   const router = useRouter();
 
   return (
-    <header className='bg-primary-25 fixed top-0 h-16 w-full'>
-      <div className='mx-auto flex h-full max-w-10/12 items-center justify-between pt-4 pb-2'>
+    <header className='border-primary-200 fixed top-0 h-16 w-full border-b bg-white'>
+      <div className='mx-auto flex h-full max-w-10/12 items-center justify-between py-2'>
         <Image
           className='h-10 object-cover'
           src='/assets/svgs/brand.svg'
@@ -30,7 +30,7 @@ export default function LayoutHeader() {
           </div>
           <SelectLocale />
           <Button
-            variant='text'
+            variant='outlined'
             color='secondary'
             className='flex items-center gap-2'
             onClick={() => router.push(HREF.LOGIN)}

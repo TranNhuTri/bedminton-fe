@@ -41,5 +41,34 @@
   "Home": {
     "title": "Tìm kiếm sân cầu lông <highlight>vãng lai</highlight>",
     "search-now": "Tìm kiếm ngay"
+  },
+  "SearchCasualCourt": {
+    "center": "Trung tâm",
+    "day": "Ngày",
+    "start-time": "Thời gian bắt đầu",
+    "end-time": "Thời gian kết thúc",
+    "fee-calculation-method": "Phương thức tính phí",
+    "minimun-number-of-slots": "Số lượng người cần tuyển tối thiểu",
+    "gender": "Giới tính",
+    "levels": {
+      "title": "Cấp độ",
+      "newbie": "Mới chơi",
+      "weak": "Yếu",
+      "inter--": "Trung bình (--)",
+      "inter-": "Trung bình (-)",
+      "inter": "Trung bình",
+      "inter+": "Trung bình (+)",
+      "inter++": "Trung bình (++)",
+      "good": "Giỏi",
+      "pro": "Chuyên nghiệp"
+    },
+    "shuttlecock-name": "Tên cầu",
+    "recommended-courts": "Sân được đề xuất",
+    "sort-by": {
+      "title": "Sắp xếp theo",
+      "location": "Địa điểm gần nhất",
+      "time": "Thời gian gần nhất",
+      "fee": "Phí thấp nhất"
+    }
   }
 }

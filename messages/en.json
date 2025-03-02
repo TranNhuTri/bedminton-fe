@@ -41,5 +41,34 @@
   "Home": {
     "title": "Searching for a <highlight>casual</highlight> badminton court",
     "search-now": "Search now"
+  },
+  "SearchCasualCourt": {
+    "center": "Center",
+    "day": "Day",
+    "start-time": "Start time",
+    "end-time": "End time",
+    "fee-calculation-method": "Fee calculation method",
+    "minimun-number-of-slots": "Minimum number of slots",
+    "gender": "Gender",
+    "levels": {
+      "title": "Levels",
+      "newbie": "Newbie",
+      "weak": "Weak",
+      "inter--": "Inter (--)",
+      "inter-": "Inter (-)",
+      "inter": "Inter",
+      "inter+": "Inter (+)",
+      "inter++": "Inter (++)",
+      "good": "Good",
+      "pro": "Pro"
+    },
+    "shuttlecock-name": "Shuttlecock name",
+    "recommended-courts": "Recommended courts",
+    "sort-by": {
+      "title": "Sort by",
+      "location": "Nearest location",
+      "time": "Nearest time",
+      "fee": "Lowest fee"
+    }
   }
 }

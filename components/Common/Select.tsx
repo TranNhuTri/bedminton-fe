@@ -12,7 +12,7 @@ import {
 import type { Option } from '@/types';
 
 type Props = SelectProps & {
-  options: Option[];
+  options?: Option[];
   label?: string;
   icon?: React.ReactNode;
 };
@@ -40,7 +40,7 @@ export default function SelectWithIcon({
         }
         {...rest}
       >
-        {options.length ? (
+        {options?.length ? (
           options.map((option) => (
             <MenuItem key={option.id} value={option.id}>
               {option.label}

@@ -30,7 +30,7 @@ export default function Login() {
         />
       </div>
       <div className='mx-auto mt-10 w-full max-w-[480px]'>
-        <div className='flex w-full flex-col gap-4 rounded-[32px] bg-white p-6'>
+        <div className='flex w-full flex-col gap-4 rounded-3xl bg-white p-6'>
           <FormControl variant='outlined' className='w-full'>
             <InputLabel htmlFor='input-email-address'>
               {t('email-address')}

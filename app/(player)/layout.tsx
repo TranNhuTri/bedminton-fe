@@ -6,7 +6,7 @@ type Props = Readonly<{
 
 export default function HomeLayout({ children }: Props) {
   return (
-    <div className='bg-primary-25 pt-16'>
+    <div className='bg-primary-25 min-h-screen pt-16'>
       <LayoutHeader />
       {children}
     </div>

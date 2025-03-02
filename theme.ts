@@ -51,6 +51,14 @@ const theme = createTheme({
         },
       },
     },
+    MuiChip: {
+      styleOverrides: {
+        outlinedPrimary: {
+          backgroundColor: 'var(--color-primary-50)',
+          borderColor: 'var(--color-primary-50)',
+        },
+      },
+    },
     MuiDivider: {
       styleOverrides: {
         root: {
