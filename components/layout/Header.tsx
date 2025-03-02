@@ -20,7 +20,7 @@ export default function LayoutHeader() {
           <Button
             variant='text'
             color='secondary'
-            className='flex items-center gap-1'
+            className='flex items-center gap-2'
           >
             <IconUser className='h-4 w-4' />
             <span>{t('header.login')}</span>

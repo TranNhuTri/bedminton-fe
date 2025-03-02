@@ -8,8 +8,6 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '@/theme';
 import '@/app/globals.css';
 
-import { LayoutHeader } from '@/components/Layout';
-
 type Props = Readonly<{
   children: React.ReactNode;
 }>;
@@ -23,6 +21,16 @@ const nunitoSans = Nunito_Sans({
 export const metadata: Metadata = {
   title: 'Badminton Hub',
   description: 'We will update it later. Just keep going... lol',
+  icons: [
+    {
+      rel: 'apple-touch-icon',
+      url: '/apple-touch-icon.png',
+    },
+    {
+      rel: 'icon',
+      url: '/favicon.ico',
+    },
+  ],
 };
 
 export default async function RootLayout({ children }: Props) {
@@ -32,12 +40,9 @@ export default async function RootLayout({ children }: Props) {
   return (
     <html lang={locale}>
       <body className={nunitoSans.variable}>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <AppRouterCacheProvider>
-            <ThemeProvider theme={theme}>
-              <LayoutHeader />
-              {children}
-            </ThemeProvider>
+            <ThemeProvider theme={theme}>{children}</ThemeProvider>
           </AppRouterCacheProvider>
         </NextIntlClientProvider>
       </body>

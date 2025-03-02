@@ -14,7 +14,17 @@
       "empty": "Không có dữ liệu"
     }
   },
-  "HomePage": {
+  "Login": {
+    "title": "Chào mừng trở lại",
+    "email-address": "Địa chỉ email",
+    "password": "Mật khẩu",
+    "forgot-password": "Quên mật khẩu?",
+    "login": "Đăng nhập",
+    "or-login-with": "Hoặc đăng nhập bằng",
+    "dont-have-an-account-yet": "Chưa có tài khoản?",
+    "register": "Đăng ký"
+  },
+  "Home": {
     "title": "Xin chào thế giới!"
   }
 }

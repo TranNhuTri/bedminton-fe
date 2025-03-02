@@ -14,7 +14,17 @@
       "empty": "No data"
     }
   },
-  "HomePage": {
+  "Login": {
+    "title": "Welcome back to",
+    "email-address": "Email address",
+    "password": "Password",
+    "forgot-password": "Forgot password?",
+    "login": "Login",
+    "or-login-with": "Or login with",
+    "dont-have-an-account-yet": "Don’t have an account yet?",
+    "register": "Register"
+  },
+  "Home": {
     "title": "Hello world!"
   }
 }

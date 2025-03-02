@@ -1,4 +1,10 @@
 export { default as IconBrand } from './Brand';
 export { default as IconChevronDown } from './ChevronDown';
+export { default as IconEmail } from './Email';
+export { default as IconEye } from './Eye';
+export { default as IconEyeSlash } from './EyeSlash';
+export { default as IconFacebook } from './Facebook';
+export { default as IconGoogle } from './Google';
 export { default as IconLocation } from './Location';
+export { default as IconLock } from './Lock';
 export { default as IconUser } from './User';

@@ -8,6 +8,7 @@ const theme = createTheme({
         root: {
           borderRadius: 12,
           textTransform: 'none',
+          boxShadow: 'none',
         },
         sizeMedium: {
           fontSize: 16,
@@ -41,6 +42,15 @@ const theme = createTheme({
         textSecondary: {
           backgroundColor: 'var(--color-white)',
           color: 'var(--color-gray-500)',
+        },
+      },
+    },
+    MuiDivider: {
+      styleOverrides: {
+        root: {
+          '&::before, &::after': {
+            borderTop: 'thin solid var(--color-gray-200)',
+          },
         },
       },
     },
