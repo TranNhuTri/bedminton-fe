@@ -4,40 +4,63 @@ import {
   MenuItem,
   FormControl,
   InputLabel,
-  OutlinedInput,
   InputAdornment,
   SelectProps,
 } from '@mui/material';
 
 import type { Option } from '@/types';
+import { useState } from 'react';
 
 type Props = SelectProps & {
   options?: Option[];
   label?: string;
   icon?: React.ReactNode;
+  formControlClass?: string;
 };
 
 export default function SelectWithIcon({
   options,
   label,
   icon,
+  className,
   ...rest
 }: Props) {
   const t = useTranslations('Common');
+  const [focused, setFocused] = useState(false);
+  const hasValue = rest.value !== undefined && rest.value !== '';
 
   return (
-    <FormControl variant='outlined'>
-      {label && <InputLabel htmlFor='select'>{label}</InputLabel>}
+    <FormControl className={className} variant='outlined'>
+      {label && (
+        <InputLabel
+          htmlFor='select'
+          shrink={focused || hasValue}
+          sx={{
+            top: '-16%',
+            left: '26px',
+            backgroundColor: 'background.paper',
+            '&.MuiInputLabel-shrink': {
+              top: '0 !important',
+              left: '0 !important',
+            },
+          }}
+        >
+          {label}
+        </InputLabel>
+      )}
       <Select
         id='select'
         label={label}
-        input={
-          <OutlinedInput
-            startAdornment={
-              icon && <InputAdornment position='start'>{icon}</InputAdornment>
-            }
-          />
+        onFocus={() => setFocused(true)}
+        onBlur={() => {
+          if (!hasValue) {
+            setFocused(false);
+          }
+        }}
+        startAdornment={
+          icon && <InputAdornment position='start'>{icon}</InputAdornment>
         }
+        notched={focused || hasValue}
         {...rest}
       >
         {options?.length ? (
