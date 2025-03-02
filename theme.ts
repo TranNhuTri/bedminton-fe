@@ -1,6 +1,8 @@
 'use client';
 import { createTheme } from '@mui/material/styles';
 
+import { IconChevronDown } from '@/components/Icon';
+
 const theme = createTheme({
   components: {
     MuiButton: {
@@ -78,6 +80,38 @@ const theme = createTheme({
         },
         input: {
           padding: '4px 12px',
+        },
+      },
+    },
+    MuiInputAdornment: {
+      styleOverrides: {
+        positionStart: {
+          '& svg': {
+            color: 'var(--color-primary-500)',
+            height: 16,
+            width: 16,
+          },
+          marginRight: 0,
+        },
+        positionEnd: {
+          '& svg': {
+            color: 'var(--color-gray-500)',
+            height: 16,
+            width: 16,
+          },
+          marginLeft: 0,
+        },
+      },
+    },
+    MuiSelect: {
+      defaultProps: {
+        IconComponent: IconChevronDown,
+      },
+      styleOverrides: {
+        icon: {
+          color: 'var(--color-primary-500)',
+          width: 16,
+          height: 16,
         },
       },
     },

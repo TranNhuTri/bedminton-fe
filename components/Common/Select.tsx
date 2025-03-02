@@ -9,6 +9,7 @@ import {
   SelectProps,
 } from '@mui/material';
 
+import { IconChevronDown } from '@/components/Icon';
 import type { Option } from '@/types';
 
 type Props = SelectProps & {
@@ -30,7 +31,6 @@ export default function SelectWithIcon({
       {label && <InputLabel>{label}</InputLabel>}
       <Select
         label={label}
-        IconComponent={undefined}
         input={
           <OutlinedInput
             startAdornment={

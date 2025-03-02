@@ -13,7 +13,7 @@ type Props = Readonly<{
 }>;
 
 const nunitoSans = Nunito_Sans({
-  weight: ['300', '600'],
+  weight: ['400', '600'],
   subsets: ['latin', 'vietnamese'],
   variable: '--font-nunito-sans',
 });

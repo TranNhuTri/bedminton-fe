@@ -51,7 +51,7 @@ export default function Home() {
               label={t('email-address')}
               startAdornment={
                 <InputAdornment position='start'>
-                  <IconEmail className='text-primary-500 h-4 w-4' />
+                  <IconEmail />
                 </InputAdornment>
               }
             />
@@ -64,21 +64,17 @@ export default function Home() {
               type={showPassword ? 'text' : 'password'}
               startAdornment={
                 <InputAdornment position='start'>
-                  <IconLock className='text-primary-500 h-4 w-4' />
+                  <IconLock />
                 </InputAdornment>
               }
               endAdornment={
                 <InputAdornment position='end'>
                   <IconButton
-                    edge='end'
+                    color='secondary'
                     size='small'
                     onClick={onToggleShowPassword}
                   >
-                    {showPassword ? (
-                      <IconEyeSlash className='h-4 w-4' />
-                    ) : (
-                      <IconEye className='h-4 w-4' />
-                    )}
+                    {showPassword ? <IconEyeSlash /> : <IconEye />}
                   </IconButton>
                 </InputAdornment>
               }

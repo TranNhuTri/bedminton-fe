@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import type { SelectChangeEvent } from '@mui/material/Select';
 
 import { CommonSelect } from '@/components/Common';
+import { IconTranslate } from '@/components/Icon';
 import { Locale } from '@/configs';
 import { setUserLocale } from '@/services/locale';
 import { enumToOptions } from '@/utils';
@@ -22,6 +23,11 @@ export default function SelectLocale() {
   };
 
   return (
-    <CommonSelect value={locale} options={localeOptions} onChange={onChange} />
+    <CommonSelect
+      icon={<IconTranslate />}
+      value={locale}
+      options={localeOptions}
+      onChange={onChange}
+    />
   );
 }
