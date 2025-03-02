@@ -14,12 +14,13 @@ import {
   IconEmail,
   IconFacebook,
   IconGoogle,
+  IconUser,
 } from '@/components/Icon';
 import { InputPassword } from '@/components/Input';
 import { HREF } from '@/configs';
 
-export default function Login() {
-  const t = useTranslations('Login');
+export default function Register() {
+  const t = useTranslations('Register');
 
   return (
     <div className='flex flex-col'>
@@ -44,17 +45,22 @@ export default function Login() {
             />
           </FormControl>
           <InputPassword label={t('password')} />
-          <div className='text-right'>
-            <Link
-              href={HREF.FORGOT_PASSWORD}
-              className='text-primary-500 underline-offset-4 transition duration-300 hover:underline'
-            >
-              {t('forgot-password')}
-            </Link>
-          </div>
-          <Button variant='contained'>{t('login')}</Button>
+          <InputPassword label={t('confirm-password')} />
+          <FormControl variant='outlined' className='w-full'>
+            <InputLabel htmlFor='input-name'>{t('name')}</InputLabel>
+            <OutlinedInput
+              id='input-name'
+              label={t('name')}
+              startAdornment={
+                <InputAdornment position='start'>
+                  <IconUser />
+                </InputAdornment>
+              }
+            />
+          </FormControl>
+          <Button variant='contained'>{t('register')}</Button>
           <Divider className='border-gray-200 text-gray-400'>
-            {t('or-login-with')}
+            {t('or-register-with')}
           </Divider>
           <div className='flex gap-2'>
             <Button
@@ -75,12 +81,12 @@ export default function Login() {
             </Button>
           </div>
           <div className='flex justify-center gap-1.5'>
-            <div className='text-gray-400'>{t('dont-have-an-account-yet')}</div>
+            <div className='text-gray-400'>{t('already-have-an-account')}</div>
             <Link
-              href={HREF.REGISTER}
+              href={HREF.LOGIN}
               className='text-primary-500 underline-offset-4 transition duration-300 hover:underline'
             >
-              {t('register')}
+              {t('login')}
             </Link>
           </div>
         </div>

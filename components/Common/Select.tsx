@@ -9,7 +9,6 @@ import {
   SelectProps,
 } from '@mui/material';
 
-import { IconChevronDown } from '@/components/Icon';
 import type { Option } from '@/types';
 
 type Props = SelectProps & {
@@ -28,8 +27,9 @@ export default function SelectWithIcon({
 
   return (
     <FormControl variant='outlined'>
-      {label && <InputLabel>{label}</InputLabel>}
+      {label && <InputLabel htmlFor='select'>{label}</InputLabel>}
       <Select
+        id='select'
         label={label}
         input={
           <OutlinedInput

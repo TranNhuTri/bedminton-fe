@@ -14,8 +14,10 @@
       "empty": "No data"
     }
   },
+  "Auth": {
+    "back-to-home": "Back to home"
+  },
   "Login": {
-    "back-to-home": "Back to home",
     "title": "Welcome back to",
     "email-address": "Email address",
     "password": "Password",
@@ -24,6 +26,17 @@
     "or-login-with": "Or login with",
     "dont-have-an-account-yet": "Don’t have an account yet?",
     "register": "Register"
+  },
+  "Register": {
+    "title": "Create an account",
+    "name": "Your name",
+    "email-address": "Email address",
+    "password": "Password",
+    "confirm-password": "Confirm password",
+    "register": "Register",
+    "or-register-with": "Or register with",
+    "already-have-an-account": "Already have an account?",
+    "login": "Login"
   },
   "Home": {
     "title": "Searching for a <highlight>casual</highlight> badminton court",

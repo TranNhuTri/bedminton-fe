@@ -4,7 +4,7 @@ type Props = Readonly<{
   children: React.ReactNode;
 }>;
 
-export default async function HomeLayout({ children }: Props) {
+export default function HomeLayout({ children }: Props) {
   return (
     <div className='bg-primary-25 pt-16'>
       <LayoutHeader />

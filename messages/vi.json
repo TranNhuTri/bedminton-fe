@@ -14,8 +14,10 @@
       "empty": "Không có dữ liệu"
     }
   },
+  "Auth": {
+    "back-to-home": "Quay lại trang chủ"
+  },
   "Login": {
-    "back-to-home": "Quay lại trang chủ",
     "title": "Chào mừng trở lại",
     "email-address": "Địa chỉ email",
     "password": "Mật khẩu",
@@ -24,6 +26,17 @@
     "or-login-with": "Hoặc đăng nhập bằng",
     "dont-have-an-account-yet": "Chưa có tài khoản?",
     "register": "Đăng ký"
+  },
+  "Register": {
+    "title": "Tạo tài khoản",
+    "name": "Tên của bạn",
+    "email-address": "Địa chỉ email",
+    "password": "Mật khẩu",
+    "confirm-password": "Xác nhận mật khẩu",
+    "register": "Đăng ký",
+    "or-register-with": "Hoặc đăng ký bằng",
+    "already-have-an-account": "Đã có tài khoản?",
+    "login": "Đăng nhập"
   },
   "Home": {
     "title": "Tìm kiếm sân cầu lông <highlight>vãng lai</highlight>",
