@@ -26,6 +26,7 @@
     "register": "Register"
   },
   "Home": {
-    "title": "Hello world!"
+    "title": "Searching for a <highlight>casual</highlight> badminton court",
+    "search-now": "Search now"
   }
 }

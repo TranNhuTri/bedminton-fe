@@ -13,7 +13,7 @@ export default function LayoutHeader() {
   const router = useRouter();
 
   return (
-    <header className='bg-primary-25 fixed h-16 w-full'>
+    <header className='bg-primary-25 fixed top-0 h-16 w-full'>
       <div className='mx-auto flex h-full max-w-10/12 items-center justify-between pt-4 pb-2'>
         <IconBrand className='h-10' />
         <div className='flex items-center gap-4'>

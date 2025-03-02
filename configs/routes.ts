@@ -3,4 +3,5 @@ export const HREF = {
   HOME: '/home',
   LOGIN: '/login',
   REGISTER: '/register',
+  SEARCH_CASUAL_COURT: '/search/casual/court',
 };

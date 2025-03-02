@@ -8,5 +8,6 @@ export { default as IconGoogle } from './Google';
 export { default as IconHome } from './Home';
 export { default as IconLocation } from './Location';
 export { default as IconLock } from './Lock';
+export { default as IconSearch } from './Search';
 export { default as IconTranslate } from './Translate';
 export { default as IconUser } from './User';
