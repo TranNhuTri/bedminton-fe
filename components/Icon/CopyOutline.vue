@@ -7,10 +7,9 @@
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="M8.91016 19.92L15.4302 13.4C16.2002 12.63 16.2002 11.37 15.4302 10.6L8.91016 4.07996"
+      d="M16 12.9V17.1C16 20.6 14.6 22 11.1 22H6.9C3.4 22 2 20.6 2 17.1V12.9C2 9.4 3.4 8 6.9 8H11.1M16 12.9C16 9.4 14.6 8 11.1 8M16 12.9V16H17.1C20.6 16 22 14.6 22 11.1V6.9C22 3.4 20.6 2 17.1 2H12.9C9.4 2 8 3.4 8 6.9V8H11.1"
       stroke="currentColor"
       stroke-width="1.5"
-      stroke-miterlimit="10"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
