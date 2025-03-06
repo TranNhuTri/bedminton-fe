@@ -1,0 +1,15 @@
+.el-button {
+  @apply rounded-xl;
+
+  &.is-plain:not(:hover) {
+    @apply bg-white;
+  }
+
+  &--primary.is-plain:not(:hover) {
+    @apply border-primary-200;
+  }
+
+  & + .el-button {
+    margin-left: unset;
+  }
+}

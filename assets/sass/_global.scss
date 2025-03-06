@@ -1,0 +1,12 @@
+@use './base/vars';
+@use './base/mixins';
+
+.margin-left-aside {
+  @include mixins.media-breakpoint-up(sm) {
+    margin-left: vars.$aside-width;
+  }
+}
+
+.nuxt-link {
+  @apply text-primary-500 cursor-pointer transition hover:text-blue-500 hover:underline;
+}

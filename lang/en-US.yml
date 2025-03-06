@@ -1,0 +1,96 @@
+screen:
+  login: Login
+  forgot_password: Forgot password
+error:
+  default:
+    title: Error
+    message: The request failed due to an internal error.
+  403:
+    title: Forbidden
+    message: The page you are trying to access could not be displayed.
+  404:
+    title: Page Not Found
+    message: |
+      The page you are looking for could not be found. 
+      The URL is incorrect or the page does not exist.
+  500:
+    title: Something went wrong
+    message: The request failed due to an internal error.
+  login:
+    invalid_credentials: Invalid login credentials
+  validate:
+    default: 'The {field} value is not valid.'
+    after: 'The {field} must be after {target}.'
+    alpha: 'Please enter {field} in half-width characters.'
+    alpha_dash: 'The {field} field may contain alpha-numeric characters as well as dashes and underscores.'
+    alpha_num: 'Please enter {field} in half-width numbers.'
+    alpha_spaces: 'The {field} field may only contain alphabetic characters as well as spaces.'
+    before: 'The {field} must be before {target}.'
+    between: 'The {field} field must be between {min} and {max}.'
+    confirmed: 'The input contents of {field_1} and {field_2} do not match.'
+    credit_card: 'The {field} field is invalid.'
+    date_between: 'Please enter {field} as a date between {min} and {max}.'
+    date_format: '{field} must be in {format} format.'
+    decimal: 'Please enter {field} in half-width numbers ({decimals} digits after the decimal point).'
+    digits: 'The {field} field must be numeric and contains exactly {length} digits.'
+    dimensions: 'The {field} field must be {width} pixels by {height} pixels.'
+    email: '{field} is not a valid email address.'
+    excluded: '{field} has an invalid value.'
+    ext: 'The {field} field must be a valid file.'
+    image: 'The {field} field must be an image.'
+    included: 'The {field} field must be a valid value.'
+    integer: 'Please enter {field} in half-width numbers.'
+    ip: 'The {field} field must be a valid ip address.'
+    ip_or_fqdn: 'The {field} field must be a valid ip address or FQDN.'
+    length: 'The {field} length must be {length}.'
+    max: 'Please enter {field} with {length} characters or less.'
+    max_value: 'Please enter {field} below or equal to {max}.'
+    mimes: 'File is not a valid file format.'
+    min: 'Please enter {field} with at least {length} characters.'
+    min_value: 'Please enter {field} with a value greater than or equal to {min}.'
+    numeric: 'The {field} field may only contain numeric characters.'
+    regex: 'The {field} field format is invalid.'
+    required_input: '{field} is require. Please input.'
+    required_select: '{field} is require. Please select.'
+    required_if: 'The {field} field is required when the {target} field has this value.'
+    size: 'The size of the specified file exceeds the upper limit ({size}MB).'
+    url: '{field} is not a valid URL.'
+    is_not_match: '{field_1} does not match {field_2}.'
+    password_invalid: 'The {field} is not a valid password rule.'
+    unique: 'The {field} has already been taken.'
+    past_date: You cannot select a date and time in the past.
+common:
+  empty: No data.
+toast:
+  title:
+    success: Success
+    error: Error
+  message:
+    create:
+      success: Created successfully.
+      error: Created failed.
+    update:
+      success: Updated successfully.
+      error: Updated failed.
+button:
+  login: Login
+  send: Send
+auth:
+  login:
+    title: Login
+    form:
+      email:
+        label: Email address
+        placeholder: Enter email address
+      password:
+        label: Password
+        placeholder: Enter password
+    redirect_to_forgot_password: Forgot your password?
+  forgot_password:
+    title: Forgot password
+    form:
+      email:
+        label: Email address
+        placeholder: Enter email address
+    redirect_to_login: Go to login screen
+    message_success: If the email address you entered is registered in the system, we will send you an email with a temporary password. Please use the temporary password in the email to log in again.

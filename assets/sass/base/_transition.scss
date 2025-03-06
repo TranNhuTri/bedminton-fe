@@ -1,0 +1,21 @@
+// <transition name="fade" />
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// <transition name="fast-fade" />
+.fast-fade-enter-active,
+.fast-fade-leave-active {
+  transition: opacity 0.15s ease;
+}
+
+.fast-fade-enter-from,
+.fast-fade-leave-to {
+  opacity: 0;
+}

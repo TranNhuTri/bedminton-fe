@@ -1,0 +1,96 @@
+screen:
+  login: Đăng nhập
+  forgot_password: パスワードお忘れ
+error:
+  default:
+    title: エラー
+    message: 内部エラーのためリクエストは失敗しました。
+  403:
+    title: Forbidden
+    message: アクセスしようとしたページは表示できませんでした。
+  404:
+    title: Page Not Found
+    message: |
+      お探しのページが見つかりませんでした。
+      URLが間違っているか、ページが存在しません。
+  500:
+    title: Something went wrong
+    message: 内部エラーのためリクエストは失敗しました。
+  login:
+    invalid_credentials: 無効なログイン情報です。
+  validate:
+    default: '{field}の値が不正です。'
+    after: '{field}は{target}の後でなければなりません。'
+    alpha: '{field}は半角文字で入力してください。'
+    alpha_dash: '{field}は英数字とハイフン、アンダースコアのみ使用できます。'
+    alpha_num: '{field}は半角数字で入力してください。'
+    alpha_spaces: '{field}はアルファベットと空白のみ使用できます。'
+    before: '{field}は{target}よりも前でなければなりません。'
+    between: '{field}は{min}から{max}の間でなければなりません。'
+    confirmed: '{field_1}と{field_2}の入力内容が一致していません。'
+    credit_card: '{field}が正しくありません。'
+    date_between: '{field}は{min}から{max}の間の日付で入力してください。'
+    date_format: '{field}は{format}形式で入力してください。'
+    decimal: '{field}は半角数字（小数点以下は{decimals}桁）で入力してください。'
+    digits: '{field}は{length}桁の数字でなければなりません。'
+    dimensions: '{field}は幅{width}px、高さ{height}px以内でなければなりません。'
+    email: '{field}は有効なメールアドレスではありません。'
+    excluded: '{field}は不正な値です。'
+    ext: '{field}は有効なファイル形式ではありません。'
+    image: '{field}は有効な画像形式ではありません。'
+    included: '{field}は有効な値ではありません。'
+    integer: '{field}は半角数字で入力してください。'
+    ip: '{field}は有効なIPアドレスではありません。'
+    is: '{field}が一致しません。'
+    is_not: '{field}が一致しています。'
+    length: '{field}は{length}文字でなければなりません。'
+    max: '{field}は{length}文字以下で入力してください。'
+    max_value: '{field}は{max}以下で入力してください。'
+    mimes: 'ファイルは有効なファイル形式ではありません。'
+    min: '{field}は{length}文字以上で入力してください。'
+    min_value: '{field}は{min}以上で入力してください。'
+    numeric: '{field}は数字のみ使用できます。'
+    regex: '{field}のフォーマットが正しくありません。'
+    required_input: '{field}は必須項目です。入力してください。'
+    required_select: '{field}は必須項目です。選択してください。'
+    size: '指定されたファイルのサイズが上限（{size}MB）を超えています。'
+    url: '{field}は有効なURLではありません。'
+    is_not_match: '{field_1}は{field_2}と一致しません。'
+    password_invalid: '{field} の形式が正しくありません。再度お試しください。'
+    unique: '{field}はすでに使用されています。'
+    past_date: 過去の日時は選択できません。
+common:
+  empty: データはありません。
+toast:
+  title:
+    success: 成功
+    error: エラー
+  message:
+    create:
+      success: 登録が完了しました。
+      error: 登録できませんでした。
+    update:
+      success: 更新が完了しました。
+      error: 更新できませんでした。
+button:
+  login: ログイン
+  send: 送信
+auth:
+  login:
+    title: Đăng nhập
+    form:
+      email:
+        label: メールアドレス
+        placeholder: メールアドレスを入力してください
+      password:
+        label: パスワード
+        placeholder: パスワードを入力してください
+    redirect_to_forgot_password: パスワードをお忘れですか？
+  forgot_password:
+    title: パスワードお忘れ
+    form:
+      email:
+        label: メールアドレス
+        placeholder: メールアドレスを入力してください
+    redirect_to_login: ログイン画面へ
+    message_success: 入力されたメールアドレスがシステムに登録されている場合、仮パスワードのメールを送信します。メールに記載の仮パスワードを利用し、再ログインしてください。​​

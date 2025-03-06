@@ -1,0 +1,86 @@
+@use '../base/vars';
+
+$-colors: (
+  'primary': (
+    'base': vars.$color-primary-500,
+  ),
+  'success': (
+    'base': vars.$color-green-500,
+  ),
+  'warning': (
+    'base': vars.$color-orange-500,
+  ),
+  'danger': (
+    'base': vars.$color-red-500,
+  ),
+  'error': (
+    'base': vars.$color-red-500,
+  ),
+  'info': (
+    'base': vars.$color-blue-500,
+  ),
+);
+
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: $-colors,
+  $font-family: (
+    '': vars.$font-family,
+  ),
+  $font-size: (
+    'extra-large': vars.$font-size-2xl,
+    'large': vars.$font-size-xl,
+    'medium': vars.$font-size-lg,
+    'base': vars.$font-size-base,
+    'small': vars.$font-size-sm,
+    'extra-small': vars.$font-size-xs,
+  ),
+  $text-color: (
+    'primary': vars.$color-primary-500,
+    'regular': vars.$color-gray-700,
+    'secondary': vars.$color-gray-500,
+    'placeholder': vars.$color-gray-200,
+    'disabled': vars.$color-gray-300,
+  ),
+  $button: (
+    'font-weight': vars.$font-weight-normal,
+  ),
+  $input-font-size: (
+    'default': vars.$font-size-base,
+  ),
+  $input: (
+    'hover-border': vars.$color-primary-200,
+    'focus-border': vars.$color-primary-500,
+    'border-color': vars.$color-gray-200,
+    'border-radius': 12px,
+    'icon-color': vars.$color-gray-300,
+    'hover-border-color': vars.$color-primary-200,
+    'clear-hover-color': vars.$color-primary-500,
+    'focus-border-color': vars.$color-primary-500,
+  ),
+  $select: (
+    'input-font-size': vars.$font-size-base,
+  ),
+  $table: (
+    'border-color': vars.$color-gray-50,
+    'header-text-color': vars.$color-primary-700,
+    'row-hover-bg-color': vars.$color-primary-50,
+    'current-row-bg-color': vars.$color-primary-100,
+  ),
+  $pagination: (
+    'border-radius': 32px,
+  ),
+  $dialog: (
+    'title-font-size': vars.$font-size-2xl,
+    'content-font-size': vars.$font-size-base,
+    'border-radius': 16px,
+  )
+);
+
+@use './aside';
+@use './breadcrumb';
+@use './button';
+@use './dialog';
+@use './form';
+@use './table';
+@use './tag';
+@use './pagination';

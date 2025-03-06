@@ -1,0 +1,32 @@
+.el-pagination {
+  button.btn-prev.is-first,
+  button.btn-next.is-last {
+    @apply bg-white text-primary-700 border-1 border-solid border-primary-200;
+
+    .el-icon {
+      @apply text-base flex items-center justify-center;
+
+      svg {
+        @apply w-4 h-4;
+      }
+    }
+
+    &[aria-disabled='true'] {
+      @apply bg-primary-25 text-primary-300 border-primary-200;
+    }
+  }
+
+  .el-pager {
+    li {
+      @apply font-medium;
+
+      &:not(.is-active) {
+        @apply bg-white text-primary-700 border-1 border-solid border-primary-200;
+      }
+
+      &:hover {
+        @apply bg-primary-50;
+      }
+    }
+  }
+}

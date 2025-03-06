@@ -1,0 +1,35 @@
+.el-dialog {
+  @apply p-0;
+
+  &__header {
+    @apply flex items-center justify-between border-b-1 border-solid border-primary-25 p-4;
+
+    &.show-close {
+      @apply pr-4;
+    }
+  }
+
+  &__title {
+    @apply text-gray-700 font-medium;
+  }
+
+  &__headerbtn {
+    @apply static w-6 h-6;
+
+    .el-icon {
+      @apply text-2xl;
+    }
+
+    svg {
+      @apply w-6 h-6 text-gray-500 hover:text-primary-500;
+    }
+  }
+
+  &__body {
+    @apply p-4;
+  }
+
+  &__footer {
+    @apply flex justify-center gap-2 border-t-1 border-solid border-primary-25 p-4;
+  }
+}

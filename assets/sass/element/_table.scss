@@ -1,0 +1,26 @@
+.el-table {
+  &__inner-wrapper::before {
+    @apply hidden;
+  }
+
+  th.el-table__cell,
+  td.el-table__cell {
+    @apply h-12;
+  }
+
+  tr.el-table__row:last-child {
+    td.el-table__cell {
+      @apply border-b-0;
+    }
+  }
+
+  td.el-table__cell {
+    .cell {
+      @apply line-clamp-1;
+
+      a {
+        @apply text-blue-500 cursor-pointer transition hover:underline;
+      }
+    }
+  }
+}

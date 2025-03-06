@@ -1,0 +1,7 @@
+@use '../base/vars';
+
+.el-aside {
+  @apply overflow-x-hidden;
+
+  width: vars.$aside-width;
+}

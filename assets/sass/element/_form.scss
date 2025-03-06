@@ -1,0 +1,22 @@
+@use '../base/vars';
+
+.el-form {
+  &-item {
+    &--large {
+      --font-size: vars.$font-size-base;
+      --el-form-label-font-size: vars.$font-size-base;
+
+      @apply mb-4;
+    }
+
+    &--lable-top {
+      .el-form-item__label {
+        @apply mb-1;
+      }
+    }
+
+    &__error {
+      @apply static;
+    }
+  }
+}

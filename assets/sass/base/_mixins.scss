@@ -1,0 +1,45 @@
+@use 'sass:map';
+@use 'element-plus/theme-chalk/src/common/var';
+
+@mixin media-breakpoint-up($breakpoint) {
+  @if map.has-key(var.$breakpoints, $breakpoint) {
+    /* stylelint-disable-next-line media-query-no-invalid */
+    @media screen and #{map.get(var.$breakpoints, $breakpoint)} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`.Please make sure it is defined in $breakpoints map.';
+  }
+}
+
+@mixin modifiers(
+  $map,
+  $attribute,
+  $prefix: '-',
+  $separator: '-',
+  $base: 'base'
+) {
+  @each $key, $value in $map {
+    &#{if($key != $base, #{$prefix}#{$key}, '')} {
+      @if meta.type-of($value) == 'map' {
+        @include modifiers($value, $attribute, $separator);
+      } @else {
+        #{$attribute}: $value !important;
+      }
+    }
+  }
+
+  @each $breakpoint, $_ in $breakpoints {
+    @each $key, $value in $map {
+      @include media-breakpoint-up($breakpoint) {
+        &\:#{if($key != $base, #{$breakpoint}#{$prefix}#{$key}, '')} {
+          @if meta.type-of($value) == 'map' {
+            @include modifiers($value, $attribute, $separator);
+          } @else {
+            #{$attribute}: $value !important;
+          }
+        }
+      }
+    }
+  }
+}

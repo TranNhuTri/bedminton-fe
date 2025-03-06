@@ -1,0 +1,21 @@
+.el-breadcrumb {
+  @apply text-lg px-6;
+
+  &__inner {
+    &.is-link {
+      @apply text-gray-500 font-normal hover:text-blue-500 hover:underline;
+    }
+  }
+
+  &__separator {
+    @apply w-3 h-3 text-gray-500 !mx-2;
+  }
+
+  &__item {
+    &:last-child {
+      .el-breadcrumb__inner {
+        @apply text-primary-700 font-medium pointer-events-none;
+      }
+    }
+  }
+}
